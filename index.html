@@ -1,0 +1,80 @@
+<!--Index Formulario-->
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="css/style.css">
+    <title>--Encriptador Alura ONE-- Salvador 2022 -- </title>
+  </head>
+<body>
+  <div class="container_main">
+    <!--
+      <p>Hola Amigos!</p>
+    -->
+    <!--Inicia Header-->
+    <div class="container_header">
+          <div class="logo">
+            <img id="img-logo" src="img/Logo@Transparent.png">
+            <!--<p>Va el logo</p>-->
+            <img>
+          </div>
+          <div class="legenda">
+            <p>Mensaje a Encriptar</p>
+          </div>
+    </div>
+    <!--Termina Header-->
+    <!--Empieza Encriptador CampoText y Copia-->
+    <div class="container_body">
+      <form id="form-traductor">
+          <div class="container_encriptador">
+           <!--Inicia Campo Encriptador-->
+            <textarea class="container_textarea" id="campotexto" name="campotexto" placeholder="Escriba su texto"></textarea>
+             <p class="container_textwarning"><i class='fa-solid fa-circle-exclamation'></i>
+Sólo letras minúsculas y sin acentos</p>
+            <p id="error-parrafo"></p>
+            <div class="buttons">
+              <button class="btn" id="btn-encriptar">Encriptar</button>
+              <button class="btn" id="btn-desencriptar">Desencriptar</button>
+              <button class="btn" id="btn-borrar">Borrar</button>
+            </div>
+          </div>
+          <div class="container_copia">
+            <!--
+            <p>Copia Encriptador</p>
+-->
+            <div class="contenedor_texto" id="contenedor-texto">
+              <!--Mensaje de Caja Texto a Descrifrar-->
+              <div id="mensaje-busqueda">
+              <img id="img-busqueda" src="img/robot_end.png">
+            <h2 id="mensaje" class="titulo-Busqueda">
+              Ningún mensaje fue encontrado
+            </h2>
+            <p id="parrafo" class="parrafo-Busqueda">
+              Ingrese el texto que desees encriptar o desencriptar 
+            </p>
+              </div>
+              <!--Fin de Caja de Texto a Descifrar...-->
+            </div>
+            <div class="btn-copiar">
+              <button class="btn" id="btn-copiar">Copiar</button>
+            </div>
+         
+            <!--Termina Campo Encriptador-->
+            </form>
+         </div>
+      <!--Termina Encriptador CampoText y Copia-->
+    </div>
+    
+    <footer class="container_footer">
+    <div>
+      <p>Desarrollado por Juan Salvador | &copy; ONE- Oracle Next Education - Alura Latam - 2022</p>
+    </div>
+  </footer>
+  </div>
+  <script src="js/script_encriptador.js"></script>
+</body>
+</html>
