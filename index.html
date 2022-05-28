@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet"  href="css/style.css">
     <title>--Encriptador Alura ONE-- Salvador 2022 -- </title>
   </head>
@@ -30,7 +31,7 @@
     <!--Empieza Encriptador CampoText y Copia-->
     <div class="container_body">
       <form id="form-traductor">
-          <div class="container_encriptador">
+          <div class="container_encriptador" data-aos="fade-right">
            <!--Inicia Campo Encriptador-->
             <textarea class="container_textarea" id="campotexto" name="campotexto" placeholder="Escriba su texto"></textarea>
              <p class="container_textwarning"><i class='fa-solid fa-circle-exclamation'></i>
@@ -42,14 +43,14 @@ Sólo letras minúsculas y sin acentos</p>
               <button class="btn" id="btn-borrar">Borrar</button>
             </div>
           </div>
-          <div class="container_copia">
+          <div class="container_copia" data-aos="fade-left">
             <!--
             <p>Copia Encriptador</p>
 -->
             <div class="contenedor_texto" id="contenedor-texto">
               <!--Mensaje de Caja Texto a Descrifrar-->
               <div id="mensaje-busqueda">
-              <img id="img-busqueda" src="img/robot_end.png">
+              <img id="img-busqueda" src="img/robot_end.png" data-aos="fade-down">
             <h2 id="mensaje" class="titulo-Busqueda">
               Ningún mensaje fue encontrado
             </h2>
@@ -75,6 +76,13 @@ Sólo letras minúsculas y sin acentos</p>
     </div>
   </footer>
   </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script_encriptador.js"></script>
+    <script>
+  AOS.init(
+  {
+      duration: 1000
+  });
+</script>
 </body>
 </html>
